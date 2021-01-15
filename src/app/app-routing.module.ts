@@ -2,14 +2,17 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
-import {InstructorDashboardComponent} from './instructor-dashboard/instructor-dashboard.component';
-import {InstructorDetailsComponent} from './instructor-details/instructor-details.component';
-import {InstructorUpdatedetailsComponent} from './instructor-updatedetails/instructor-updatedetails.component';
+import {InstructorDashboardComponent} from './instructor/instructor-dashboard/instructor-dashboard.component';
+import {InstructorDetailsComponent} from './instructor/instructor-details/instructor-details.component'
+import {InstructorUpdateDetailsComponent} from './instructor/instructor-update-details/instructor-update-details.component'
 import {SignupComponent} from './signup/signup.component';
-import {StudentDashboardComponent} from './student-dashboard/student-dashboard.component';
-import {StudentDetailsComponent} from './student-details/student-details.component';
-import {UpdateDetailsComponent} from './update-details/update-details.component';
+import {StudentDashboardComponent} from './student/student-dashboard/student-dashboard.component';
+import {StudentUpdateDetailsComponent} from './student/student-update-details/student-update-details.component';
 
+import {CourseDetailsComponent} from './course/course-details/course-details.component';
+import {CourseContentListComponent} from './course/course-content-list/course-content-list.component';
+import {CourseDashboardComponent} from './course/course-dashboard/course-dashboard.component';
+import {CourseListComponent} from './course/course-list/course-list.component';
 const routes: Routes = [
   {
     path:'home',
@@ -28,8 +31,8 @@ const routes: Routes = [
     component: InstructorDetailsComponent
   },
   {
-    path:'instructor-updatedetails',
-    component: InstructorUpdatedetailsComponent
+    path:'instructor-update-details',
+    component: InstructorUpdateDetailsComponent
   },
   {
     path:'signup',
@@ -40,14 +43,25 @@ const routes: Routes = [
     component: StudentDashboardComponent
   },
   {
-    path:'student-details',
-    component: StudentDetailsComponent
+    path:'student-update-details',
+    component: StudentUpdateDetailsComponent
   },
   {
-    path:'update-details',
-    component: UpdateDetailsComponent
+    path:'course-list',
+    component: CourseListComponent
+  },
+  {
+    path:'course-dashboard',
+    component: CourseDashboardComponent
+  },
+  {
+    path:'course-content-list',
+    component: CourseContentListComponent
+  },
+  {
+    path:'course-details',
+    component: CourseDetailsComponent
   }
-
 
 ];
 

@@ -11,30 +11,38 @@ import {MatTableModule} from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
-import { StudentDetailsComponent } from './student-details/student-details.component';
-import { UpdateDetailsComponent } from './update-details/update-details.component';
+import { StudentDashboardComponent } from './student/student-dashboard/student-dashboard.component';
+import { StudentDetailsComponent } from './student/student-details/student-details.component';
+import { StudentUpdateDetailsComponent } from './student/student-update-details/student-update-details.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { InstructorDashboardComponent } from './instructor-dashboard/instructor-dashboard.component';
-import { InstructorDetailsComponent } from './instructor-details/instructor-details.component';
-import { InstructorUpdatedetailsComponent } from './instructor-updatedetails/instructor-updatedetails.component';
-
-
+import { InstructorDashboardComponent } from './instructor/instructor-dashboard/instructor-dashboard.component';
+import {InstructorDetailsComponent} from './instructor/instructor-details/instructor-details.component'
+import {InstructorUpdateDetailsComponent} from './instructor/instructor-update-details/instructor-update-details.component';
+import {CourseDetailsComponent} from './course/course-details/course-details.component';
+import {CourseContentListComponent} from './course/course-content-list/course-content-list.component';
+import {CourseDashboardComponent} from './course/course-dashboard/course-dashboard.component';
+import {CourseListComponent} from './course/course-list/course-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentDashboardComponent,
     StudentDetailsComponent,
-    UpdateDetailsComponent,
+    StudentUpdateDetailsComponent,
     HomeComponent,
     LoginComponent,
     SignupComponent,
     InstructorDashboardComponent,
     InstructorDetailsComponent,
-    InstructorUpdatedetailsComponent
+    InstructorUpdateDetailsComponent,
+    CourseDetailsComponent,
+    CourseContentListComponent,
+    CourseDashboardComponent,
+    CourseListComponent
+
+   
   ],
   imports: [
     BrowserModule,
